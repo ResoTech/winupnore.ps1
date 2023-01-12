@@ -13,7 +13,7 @@ $Updates = Get-WUInstall
 # Install updates
 if ($Updates) {
     Write-Output "Installing updates..."
-    Install-WindowsUpdate -Install -AcceptAll -AutoReboot
+    Install-WindowsUpdate -Install -AcceptAll
 }
 else {
     Write-Output "No updates available."
