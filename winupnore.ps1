@@ -2,12 +2,12 @@
 Set-ExecutionPolicy -ExecutionPolicy Unrestricted
 
 #false confirm TESTING!!!!
-Install-PackageProvider -Name NuGet -Confirm:$false
+Install-PackageProvider -Name NuGet -Confirm:$true
 
 # Install the PSWindowsUpdate module
-Install-Module -Name PSWindowsUpdate -force
+Install-Module -Name PSWindowsUpdate -force -Confirm:$true
 
-Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
+#Install-PackageProvider -Name NuGet -MinimumVersion 2.8.5.201 -Force
 
 # Import the module
 Import-Module -Name PSWindowsUpdate
