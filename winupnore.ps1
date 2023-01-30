@@ -18,7 +18,7 @@ $Updates = Get-WUInstall
 # Install updates
 if ($Updates) {
     Write-Output "Installing updates..."
-    Install-WindowsUpdate -Install -AcceptAll
+    Install-WindowsUpdate -Install -AcceptAll -ScheduleReboot 01.31.2023 00:00:00
 }
 else {
     Write-Output "No updates available."
