@@ -19,7 +19,7 @@ if ($Updates) {
     Write-Output "Installing updates..."
     #Get-WindowsUpdate -Install -AcceptAll -IgnoreReboot
     #changed time to 14:00 from 23:45
-    Install-WindowsUpdate -AcceptAll -IgnoreReboot -ScheduleReboot $(Get-Date "14:00")
+    Install-WindowsUpdate -AcceptAll -IgnoreReboot -ScheduleReboot $(Get-Date "14:05")
 }
 else {
     Write-Output "No updates available."
